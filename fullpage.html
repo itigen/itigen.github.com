@@ -16,12 +16,12 @@
                 </div>
                 <div class="R" id="menu">
                     <ul>
-                        <li><a id="classmates" href="#classmates">同学</a></li>
-                        <li><a id="besties" href="#besties">闺蜜</a></li>
-                        <li><a id="roommates" href="#roommates">室友</a></li>
-                        <li><a id="lover" href="#lover">情侣</a></li>
-                        <li><a id="friends" href="#friends">朋友</a></li>
-                        <li><a id="home" href="#home" class="name">ITIGEN</a></li>
+                        <li><a id="s_classmates" href="#classmates">同学</a></li>
+                        <li><a id="s_besties" href="#besties">闺蜜</a></li>
+                        <li><a id="s_roommates" href="#roommates">室友</a></li>
+                        <li><a id="s_lover" href="#lover">情侣</a></li>
+                        <li><a id="s_friends" href="#friends">朋友</a></li>
+                        <li><a id="s_home" href="#home" class="name">ITIGEN</a></li>
                     </ul>
                 </div>
                 <div class="c"></div>
@@ -49,6 +49,7 @@
     <script type="text/javascript" src="static/fullpage/jquery.fullPage.js"></script>
     <script>
         $(document).ready(function() {
+            $('#s_home').css('color', '#4bbfc3');
             $('#fullpage').fullpage({
                 verticalCentered: true,
                 resize : true,
@@ -56,10 +57,9 @@
                 anchors:['home', 'friends', 'lover', 'roommates', 'besties', 'classmates'],
                 scrollingSpeed: 800,
                 easing: 'easeOutExpo',
-                menu: true,
+                menu: '#menu',
                 slidesNavigation: false,
                 loopBottom: true,
-                loopTop: false,
                 loopHorizontal: true,
                 autoScrolling: true,
                 scrollOverflow: false,
@@ -79,8 +79,8 @@
                 afterLoad: function(anchorLink, index){
                     $('#menu a').css('color', '#505050');
                     $('#menu a').css('text-decoration', 'none');
-                    $('#' + anchorLink).css('color', '#4bbfc3');
-                    $('#' + anchorLink).css('text-decoration', 'underline');
+                    $('#s_' + anchorLink).css('color', '#4bbfc3');
+                    $('#s_' + anchorLink).css('text-decoration', 'underline');
                 },
                 afterRender: function(){},
                 afterResize: function(){},
