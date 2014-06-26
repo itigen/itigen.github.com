@@ -39,6 +39,15 @@ ul{
     color: #505050;
 }
 
+.name{
+    font-family: 'Oswald';
+    color: #505050;
+}
+
+.big{
+    font-size: 80px;
+}
+
 #header{
     background-image: url('http://luyou.xunlei.com/static/image/open/toolbar-bg-inverted.png');
     height: 51px;
@@ -50,6 +59,7 @@ ul{
 }
 .box{
     padding: 0 50px;
+    text-align: center;
 }
 
 .L{
