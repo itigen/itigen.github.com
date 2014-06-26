@@ -22,7 +22,7 @@ ul{
 
 #menu ul li a{
     color: #4b4b4b;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Hiragino Sans GB', 'Microsoft Yahei', simsun, sans-serif
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Hiragino Sans GB', 'Microsoft Yahei', simsun, sans-serif;
     outline: none;
     text-decoration: none;
     transition: color 0.8s;
