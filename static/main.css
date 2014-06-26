@@ -34,6 +34,11 @@ ul{
     transition: color 0.8s;
 }
 
+#menu ul .name{
+    font-family: 'Oswald';
+    color: #505050;
+}
+
 #header{
     background-image: url('http://luyou.xunlei.com/static/image/open/toolbar-bg-inverted.png');
     height: 51px;
@@ -71,9 +76,4 @@ ul{
 #logo a:hover{
     color: #000;
     transition: color 0.8s;
-}
-
-.name{
-    font-family: 'Oswald';
-    color: #505050;
 }
