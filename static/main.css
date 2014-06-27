@@ -145,3 +145,30 @@ ul{
     -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
     -o-transform:rotate(7deg); 	/* Opera */
 }
+
+
+.t_box{
+    float: left;
+    width: 300px;
+    height: 100%;
+    min-height: 100%;
+    background: #000 url('http://itigen.qiniudn.com/t.jpg') no-repeat center;
+}
+
+#about_us{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Hiragino Sans GB', 'Microsoft Yahei', simsun, sans-serif;
+    padding-top: 81px;
+    padding-left: 300px;
+    color: #fff;
+}
+
+#about_us .item{
+    border-top: 1px solid #000;
+    padding: 30px;
+    width: 100%;
+}
+
+#about_us .item_top{
+    padding: 30px;
+    width: 100%;
+}
