@@ -58,10 +58,6 @@ ul{
     width: 100%;
     z-index: 100;
 }
-.box{
-    padding: 0 50px;
-    text-align: center;
-}
 
 .L{
     float: left;
@@ -91,4 +87,61 @@ ul{
 
 .section{
     color: #fff;
+}
+
+.box{
+    padding: 0 50px;
+    text-align: center;
+}
+
+.box img{
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    background-color: #FFFFFF;
+
+}
+
+
+.img1{
+    transform:rotate(7deg);
+    -ms-transform:rotate(7deg); 	/* IE 9 */
+    -moz-transform:rotate(7deg); 	/* Firefox */
+    -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+    -o-transform:rotate(7deg); 	/* Opera */
+}
+
+.img2{
+    margin-left: -20px;
+    transform:rotate(-7deg);
+    -ms-transform:rotate(-7deg); 	/* IE 9 */
+    -moz-transform:rotate(-7deg); 	/* Firefox */
+    -webkit-transform:rotate(-7deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-7deg); 	/* Opera */
+}
+
+.img3{
+    margin-left: -20px;
+    transform:rotate(4deg);
+    -ms-transform:rotate(4deg); 	/* IE 9 */
+    -moz-transform:rotate(4deg); 	/* Firefox */
+    -webkit-transform:rotate(4deg); /* Safari 和 Chrome */
+    -o-transform:rotate(4deg); 	/* Opera */
+}
+
+.img4{
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); 	/* IE 9 */
+    -moz-transform:rotate(10deg); 	/* Firefox */
+    -webkit-transform:rotate(10deg); /* Safari 和 Chrome */
+    -o-transform:rotate(10deg); 	/* Opera */
+
+}
+
+.img5{
+    margin-left: -20px;
+    transform:rotate(7deg);
+    -ms-transform:rotate(7deg); 	/* IE 9 */
+    -moz-transform:rotate(7deg); 	/* Firefox */
+    -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+    -o-transform:rotate(7deg); 	/* Opera */
 }
