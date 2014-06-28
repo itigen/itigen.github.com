@@ -190,6 +190,16 @@ ul{
     float: left;
 }
 
+#about_us a{
+    color: #fff;
+    transition: color 0.8s
+}
+
+#about_us a:hover{
+    color: #4bbfc3;
+    transition: color 0.8s
+}
+
 #about_us .sub_item{
     float: left;
     margin: 0 0 20px 0;
