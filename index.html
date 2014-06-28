@@ -96,51 +96,58 @@
             </div>
         </div>
         <div class="section" style="color: #fff;">
-            <div class="t_box">&nbsp;</div>
+            <div class="t_box"></div>
             <div id="about_us">
                 <div class="item_top">
                     <p><b>关于我们</b></p>
-                    <p>关于我们</p>
+                    <div class="sub_item">
+                        <div class="avatar" style="background-image: url('http://itigen.qiniudn.com/avatar_liuxu.jpg')">&nbsp;</div>
+                    <div class="team">
+                        <p><b>刘旭</b></p>
+                        <p>
+                            北京外国语大学，硕士<br>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="sub_item">
+                        <div class="avatar" style="background-image: url('http://itigen.qiniudn.com/avatar_tonghs.jpg');">&nbsp;</div>
+                    <div class="team">
+                        <p><b>仝华帅</b></p>
+                        <p>
+                            程序猿<br>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="c"></div>
                 </div>
                 <div class="item">
                     <p><b>联系我们</b></p>
-                    <p></p>关于我们</p>
+                    <div class="sub_item">
+                        <p>
+                            电话：18601980445<br>
+                            QQ：522183104<br>
+                            淘宝店铺：
+                        </p>
+                    </div>
+                    <div class="sub_item">
+                    </div>
+                    <div class="c"></div>
                 </div>
                 <div class="item">
-                    <p><b>隐私声明</b></p>
-                    <p></p>关于我们</p>
+                    <p><b>版权声明</b></p>
+                    <p>
+                        本网站所载照片已取得 被拍摄者 授权。<br>
+                        本网站所载照片版权归 被拍摄者 和 映画一言 所有，未经书面允许，任何机构或个人不得复制、传播和使用。<br>
+                        如果我们侵犯了您的权利，或者您不希望您的照片出现在本站，请及时与我们联系。
+                    </p>
                 </div>
             </div>
-            <div class="c"></div>
         </div>
 
     </div>
-
-       
     </body>
     <script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
     <script src="static/fullpage/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="static/fullpage/jquery.fullPage.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#s_home').css('color', '#4bbfc3');
-            $('#fullpage').fullpage({
-				slidesColor: ['#1ABC9C', '#8fb98b', '#3498DB', '#eae1c0', '#de564b', '#7BAABE', '#E67E22', '#2f2f2f', '#E74C3C'],
-                anchors:['home', 'friends', 'lover', 'roommates', 'people', 'besties', 'classmates', 'about'],
-                scrollingSpeed: 800,
-                easing: 'easeOutExpo',
-                menu: '#menu',
-                loopBottom: true,
-				slidesNavigation: true,			
-
-                //events
-                afterLoad: function(anchorLink, index){
-                    $('#menu a').css('color', '#505050');
-                    $('#menu a').css('text-decoration', 'none');
-                    $('#s_' + anchorLink).css('color', '#4bbfc3');
-                    $('#s_' + anchorLink).css('text-decoration', 'underline');
-                }
-            });
-        });
-    </script>
+    <script type="text/javascript" src="static/main.js"></script>
 </html>
