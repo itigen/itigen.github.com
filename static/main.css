@@ -152,13 +152,15 @@ ul{
     width: 300px;
     height: 100%;
     min-height: 100%;
+    position: absolute;
     background: #000 url('http://itigen.qiniudn.com/t.jpg') no-repeat center;
 }
 
 #about_us{
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Hiragino Sans GB', 'Microsoft Yahei', simsun, sans-serif;
-    padding-top: 81px;
+    height: 100%;
     padding-left: 300px;
+    padding-top: 31px;
     color: #fff;
 }
 
@@ -171,4 +173,25 @@ ul{
 #about_us .item_top{
     padding: 30px;
     width: 100%;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+#about_us .sub_item .team{
+    padding-left: 30px;
+    float: left;
+}
+
+#about_us .sub_item{
+    float: left;
+    margin: 20px 0 20px 0;
+    width: 50%;
 }
