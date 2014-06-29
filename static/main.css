@@ -48,7 +48,6 @@ ul{
 
 #menu ul li a:hover{
     color: #000;
-    text-decoration: underline;
     transition: color 0.8s;
 }
 
