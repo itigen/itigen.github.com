@@ -16,9 +16,26 @@ ul{
 
 #menu ul li{
     float: right;
+    height: 51px;
+    line-height: 51px;
     list-style: none;   
     padding: 0 10px;
 }
+
+#menu ul li #s_home{
+    background: url('../images/logo.png') no-repeat center;
+    display: block;
+    height: 19px;
+    margin-top: 16px;
+    transition: background 0.8s;
+    width: 65px;
+}
+
+#menu ul li #s_home:hover{
+    background: url('../images/logo_hover.png') no-repeat center;
+    transition: background 0.8s;
+}
+
 
 #menu ul li a{
     color: #4b4b4b;
@@ -94,7 +111,7 @@ ul{
     text-align: center;
 }
 
-.box img{
+.box section img{
     padding: 10px;
     border: 1px solid #eeeeee;
     background-color: #FFFFFF;
