@@ -36,6 +36,9 @@ $(document).ready(function() {
 
             if (anchorLink.indexOf('home') >= 0){
                 $('#s_home').css('background-image', "url('images/logo_focus.png')");
+                $('#s_' + anchorLink).hover(function(){
+                    $(this).css('background-image', "url('images/logo_focus.png')");
+                });
             }else{
                 $('#s_home').css('background-image', "url('images/logo.png')");
                 $('#s_' + anchorLink).css('color', '#4bbfc3');
