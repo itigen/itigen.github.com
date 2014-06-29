@@ -18,7 +18,7 @@ function check_browser(){
 
 $(document).ready(function() {
     check_browser();
-    $('#s_home').css('background-image', "url('images/logo_focus.png')");
+    $('#s_home').css('background-position', "bottom");
     $('#fullpage').fullpage({
         slidesColor: ['#1ABC9C', '#8fb98b', '#3498DB', '#eae1c0', '#de564b', '#7BAABE', '#E67E22', '#2f2f2f', '#E74C3C'],
         anchors:['home', 'friends', 'lover', 'roommates', 'people', 'besties', 'classmates', 'about'],
@@ -34,19 +34,20 @@ $(document).ready(function() {
             $('#menu a').css('text-decoration', 'none');
 
             $('#menu a').each(function(){
-                if ($(this).attr('id').indexOf(anchorLink) < 0){
-                    $(this).hover(function(){
-                        if ($(this).attr('id').indexOf('s_home') >=0){
-                            $(this).css('background-image', "url('images/logo_hover.png')");
+                var obj = $(this);
+                if (obj.attr('id').indexOf(anchorLink) < 0){
+                    obj.hover(function(){
+                        if (obj.attr('id').indexOf('s_home') >=0){
+                            obj.css('background-position', "center");
                         }else{
-                            $(this).css('color', '#000');
+                            obj.css('color', '#000');
                         }
 
                     }, function(){
-                        if ($(this).attr('id').indexOf('s_home') >=0){
-                            $(this).css('background-image', "url('images/logo.png')");
+                        if (obj.attr('id').indexOf('s_home') >=0){
+                            obj.css('background-position', "top");
                         }else{
-                            $(this).css('color', '#505050');
+                            obj.css('color', '#505050');
                         }
 
                     })
@@ -54,12 +55,12 @@ $(document).ready(function() {
             });
 
             if (anchorLink.indexOf('home') >= 0){
-                $('#s_home').css('background-image', "url('images/logo_focus.png')");
+                $('#s_home').css('background-position', "bottom");
                 $('#s_' + anchorLink).hover(function(){
-                    $(this).css('background-image', "url('images/logo_focus.png')");
+                    $(this).css('background-position', "bottom");
                 });
             }else{
-                $('#s_home').css('background-image', "url('images/logo.png')");
+                $('#s_home').css('background-position', "top");
                 $('#s_' + anchorLink).css('color', '#4bbfc3');
                 $('#s_' + anchorLink).css('text-decoration', 'underline');
 

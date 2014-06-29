@@ -23,7 +23,7 @@ ul{
 }
 
 #menu ul li #s_home{
-    background: url('../images/logo.png') no-repeat center;
+    background: url('../images/logo.png') no-repeat top;
     display: block;
     height: 19px;
     margin-top: 16px;
@@ -32,7 +32,7 @@ ul{
 }
 
 #menu ul li #s_home:hover{
-    background: url('../images/logo_hover.png') no-repeat center;
+    background: url('../images/logo.png') no-repeat center;
     transition: background 0.8s;
 }
 
