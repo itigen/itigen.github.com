@@ -1,4 +1,23 @@
+function check_browser(){
+    var Sys = {};
+    var ua = navigator.userAgent.toLowerCase();
+    var s;
+    (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+        (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+            (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+                (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+                    (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+    //以下进行测试
+    //if (Sys.ie) alert('IE: ' + Sys.ie);
+    //if (Sys.firefox) alert('Firefox: ' + Sys.firefox);
+    //if (Sys.chrome) alert('Chrome: ' + Sys.chrome);
+    //if (Sys.opera) alert('Opera: ' + Sys.opera);
+    //if (Sys.safari) alert('Safari: ' + Sys.safari);
+}
+
 $(document).ready(function() {
+    check_browser();
     $('#s_home').css('background-image', "url('images/logo_focus.png')");
     $('#fullpage').fullpage({
         slidesColor: ['#1ABC9C', '#8fb98b', '#3498DB', '#eae1c0', '#de564b', '#7BAABE', '#E67E22', '#2f2f2f', '#E74C3C'],
@@ -51,3 +70,8 @@ $(document).ready(function() {
         }
     });
 });
+
+
+function warning(msg){
+
+}

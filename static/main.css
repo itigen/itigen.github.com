@@ -88,10 +88,12 @@ ul{
 }
 
 #logo a{
+    border: 0;
     color: #4bbfc3;
     cursor: pointer;
     font-family: 'Oswald';
     font-size: 32px;
+    outline: none;
     text-decoration: none;
     transition: color 0.8s;
 }
